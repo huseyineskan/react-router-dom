@@ -44,3 +44,49 @@ nav a {
 nav a:not(:last-child) {
   margin-right: 30px;
 }
+
+nav a {
+  position: relative;
+}
+
+nav .subMenu {
+  position: absolute;
+  background-color: #1e272e;
+  display: flex;
+  flex-direction: column;
+  top: 40px;
+  left: -5px;
+  width: max-content;
+  padding: 10px;
+  opacity: 0;
+  transition: 300ms ease;
+  border-radius: 0 0 5px 5px;
+}
+
+nav .subMenu > a {
+  font-size: 14px;
+}
+
+nav > a:hover .subMenu {
+  opacity: 1;
+  top: 59px;
+  transition: 300ms ease;
+}
+
+.forms-div {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.forms-div a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #004b5e;
+  padding: 10px 20px;
+}
+
+.forms-div a:first-child {
+  background-color: #4e7000;
+}

@@ -1,23 +1,22 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
 
-function Products() {
+function Category1() {
   return (
     <>
       <section className="bg-gray">
         <div className="container">
           <div className="breadcrumb">
-            <h1>PRODUCTS</h1>
+            <h1>PRODUCTS / CATEGORY 1</h1>
           </div>
         </div>
       </section>
       <section>
         <div className="container">
-          <p>Welcome to products page</p>
+          <p>Welcome to category 1 page</p>
         </div>
       </section>
     </>
   );
 }
 
-export default Products;
+export default Category1;
